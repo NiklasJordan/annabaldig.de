@@ -1,0 +1,225 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/space-mono-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Space Mono'), local('SpaceMono-Regular'),
+       url('../src/space-mono-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/space-mono-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/space-mono-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../src/space-mono-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/space-mono-v5-latin-regular.svg#SpaceMono') format('svg'); /* Legacy iOS */
+}
+
+/* space-mono-italic - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../src/space-mono-v5-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Space Mono Italic'), local('SpaceMono-Italic'),
+       url('../src/space-mono-v5-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/space-mono-v5-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/space-mono-v5-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../src/space-mono-v5-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/space-mono-v5-latin-italic.svg#SpaceMono') format('svg'); /* Legacy iOS */
+}
+
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/space-mono-v5-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'),
+       url('../src/space-mono-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/space-mono-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/space-mono-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../src/space-mono-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/space-mono-v5-latin-700.svg#SpaceMono') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+    margin: 1.5rem !important;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+}
+
+h2, .subline {
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+figure {
+    padding: 0;
+    margin: 0 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 1rem;
+    margin: 0;
+}
+
+div.container {
+    padding: 10%;
+    margin: 1.5rem 0;
+    min-height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.start {
+    background: #b8e1ff;
+    background-size: cover;
+}
+
+div.bio {
+    background: #efffea;
+}
+
+div.links {
+    background: #ffc857;
+}
+
+div.links ul li {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+div.contact {
+    background: #2e4052;
+    color: #fff;
+}
+
+div.contact a {
+    color: #fff;
+    text-decoration: ;
+}
+
+div.legal {
+    padding: 3% 10%;
+    margin: 1.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1040px) {
+    .columns {
+        column-count: 2;
+        column-gap: 5rem;
+    }
+    
+    .cus-column-70 {
+        width: 70%;
+    }
+
+    .cus-column-80 {
+        width: 80%;
+    }
+}
+
+/*** LIST ***/
+
+ul {
+    list-style: none;
+    padding: 0 0 0 2rem;
+    margin: 4rem 0 0 0;
+}
+
+ul li:before {
+    content: "–";
+    font-weight: bold;
+    font-size: 1.3rem;
+    float: left;
+    margin-left: -2rem;
+    margin-top: -0.1rem;
+}
+
+ul li {
+    display:inline-block;
+    margin-bottom: 1rem;
+}
+
+ul li h3 {
+    font-size: 1rem;
+    margin:0;
+}
+
+/*** ANIMATION ***/
+
+.blinking-cursor {
+    font-size: 4.5rem;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
